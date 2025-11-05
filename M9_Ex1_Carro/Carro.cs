@@ -34,8 +34,13 @@ namespace M9_Ex1_Carro
             if (Velocidade < 0)
             {
                 Velocidade = 0;
+                Console.WriteLine($"O carro desacelerou {decremento} km/h. Velocidade atual: {Velocidade} km/h.");
             }
-            Console.WriteLine($"O carro desacelerou {decremento} km/h. Velocidade atual: {Velocidade} km/h.");
+            else
+            {
+                Velocidade = 0;
+                Console.WriteLine($"O carro parou");
+            }
         }
         public void Pintar(string novaCor)
         {

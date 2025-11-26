@@ -26,7 +26,7 @@ namespace M9_Ficha05_Ex4_Alunos
                 // ignorar erros de carregamento inicial
             }
 
-            Application.Run(new MainForm(biblioteca));
+            Application.Run(new Form1(biblioteca));
         }
     }
 }

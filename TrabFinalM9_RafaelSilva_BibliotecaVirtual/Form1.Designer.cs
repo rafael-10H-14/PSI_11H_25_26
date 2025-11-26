@@ -112,6 +112,7 @@
             this.tbAlunoNome.TabIndex = 6;
             // 
             // btnAddLivro
+
             // 
             this.btnAddLivro.Location = new System.Drawing.Point(29, 140);
             this.btnAddLivro.Name = "btnAddLivro";

@@ -10,6 +10,13 @@ namespace M10_Ex01_Empresa
     {
         static void Main(string[] args)
         {
+            var gerente = new Gerente("Ana Silva", 40, 8500.00, "Recursos Humanos");
+            var estagiario = new Estagiario("Pedro Gomes", 21, 750.00, 20);
+            gerente.ExibirInformacoes();
+            Console.WriteLine();
+            estagiario.ExibirInformacoes();
+            Console.WriteLine("\nPressione qualquer tecla para sair...");
+            Console.ReadKey();
         }
     }
 }

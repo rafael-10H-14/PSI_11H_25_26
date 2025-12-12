@@ -17,6 +17,7 @@ namespace M10_Ex01_Empresa
             estagiario.ExibirInformacoes();
             Console.WriteLine("\nPressione qualquer tecla para sair...");
             Console.ReadKey();
+
         }
     }
 }

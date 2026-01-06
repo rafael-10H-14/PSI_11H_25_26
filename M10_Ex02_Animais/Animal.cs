@@ -25,7 +25,7 @@ namespace M10_Ex02_Animais
         public Cao(string nome, int idade) : base(nome, idade) { }
         public override void EmitirSom()
         {
-            Console.WriteLine("O cão ladra: Au Au!");
+            Console.WriteLine($"{Nome} ladra: Au Au!");
         }
     }
     public class Gato : Animal
@@ -33,7 +33,7 @@ namespace M10_Ex02_Animais
         public Gato(string nome, int idade) : base(nome, idade) { }
         public override void EmitirSom()
         {
-            Console.WriteLine("O gato mia: Miau!");
+            Console.WriteLine($"{Nome} mia: Miau!");
         }
     }
 }

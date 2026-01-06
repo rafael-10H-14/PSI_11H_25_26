@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace M10_Ex02_Animais
 {
@@ -19,10 +19,12 @@ namespace M10_Ex02_Animais
             };
             foreach (var animal in animais)
             {
+                Console.WriteLine($"{animal.Nome} tem {animal.Idade} anos.");
                 animal.EmitirSom();
             }
             Console.WriteLine("\nPrima qualquer tecla para sair...");
             Console.ReadKey();
+            Thread.Sleep(1000);
         }
     }
 }

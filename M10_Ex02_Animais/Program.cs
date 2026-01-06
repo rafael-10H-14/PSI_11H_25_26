@@ -25,6 +25,7 @@ namespace M10_Ex02_Animais
             Console.WriteLine("\nPrima qualquer tecla para sair...");
             Console.ReadKey();
             Thread.Sleep(1000);
+
         }
     }
 }

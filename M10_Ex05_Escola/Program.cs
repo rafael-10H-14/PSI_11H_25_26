@@ -19,6 +19,7 @@ namespace M10_Ex05_Escola
             {
                 p.Apresentar();
             }
+
             Console.WriteLine("Pressione uma tecla para sair...");
             Console.ReadKey();
         }

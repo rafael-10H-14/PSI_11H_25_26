@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace GestaoClientes
 {
-    /// <summary>
     /// ClienteRegular deriva de Cliente e adiciona o atributo tipoCliente.
     /// Implementa polimorfismo ao sobrescrever NumeroCaracteresNome().
-    /// </summary>
     public class ClienteRegular : Cliente
     {
         // Atributo adicional
@@ -30,15 +28,13 @@ namespace GestaoClientes
             this.tipoCliente = tipoCliente;
         }
 
-        /// <summary>
         /// Override do método que calcula o número de caracteres do nome.
-        /// Exemplo de comportamento diferente: conta caracteres excluindo espaços.
+        /// Exemplo de comportamento: conta caracteres excluindo espaços.
         /// Demonstra polimorfismo.
-        /// </summary>
         public override int NumeroCaracteresNome()
         {
             var nome = this.Nome ?? string.Empty;
-            // Conta caracteres sem espaços (exemplo de comportamento diferente)
+            // Conta caracteres sem espaços
             int count = 0;
             foreach (char c in nome)
             {

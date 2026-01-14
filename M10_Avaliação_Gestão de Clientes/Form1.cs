@@ -11,7 +11,6 @@ namespace GestaoClientes
     {
         // Lista do tipo List<Cliente>
         private List<Cliente> clientes = new List<Cliente>();
-
         public MainForm()
         {
             InitializeComponent();
@@ -38,7 +37,6 @@ namespace GestaoClientes
                     txtId.Focus();
                     return;
                 }
-
                 string nome = txtNome.Text.Trim();
                 string tipo = txtTipo.Text.Trim();
 
@@ -64,7 +62,6 @@ namespace GestaoClientes
                 MessageBox.Show("Ocorreu um erro ao adicionar o cliente:\n" + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         // Evento do botão Média de caracteres
         private void btnMediaCaracteres_Click(object sender, EventArgs e)
         {
@@ -75,7 +72,6 @@ namespace GestaoClientes
                     MessageBox.Show("A lista de clientes está vazia.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-
                 // Chama o método NumeroCaracteresNome de cada cliente (polimorfismo em ação)
                 double media = clientes.Average(c => c.NumeroCaracteresNome());
                 MessageBox.Show($"Média de caracteres do nome: {media:F2}", "Média", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -97,7 +93,6 @@ namespace GestaoClientes
                     MessageBox.Show("Não há IDs pares na lista.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-
                 int maiorPar = pares.Max();
                 MessageBox.Show($"Maior ID par na lista: {maiorPar}", "Maior Par", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

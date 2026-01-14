@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GestaoClientes
 {
 
-    /// Classe abstrata Cliente com encapsulamento e métodos requisitados.
+    /// Classe abstrata Cliente com encapsulamento
     public abstract class Cliente
     {
         // Atributos privados

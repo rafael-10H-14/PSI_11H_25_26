@@ -51,6 +51,7 @@ namespace Calculadora
             return num1 - num2;
         }
 
+
         /// <summary>
         /// Realiza a multiplicação de dois números
         /// </summary>
